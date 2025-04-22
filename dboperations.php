@@ -23,7 +23,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" ) {
         echo $uname;
         $sql = "SELECT B FROM table1 WHERE A=$uname";
         $conn->query($sql);
-        $result = 
         echo "1";
     }
     if(isset($_POST['b2'])){
