@@ -1,7 +1,8 @@
 <?php
-$cookie_name = "user";
-$cookie_value = "John Doe";
-setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1 day
+$cookie_name = "uid";
+$cookie_value = "123456";
+setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/");
+setcookie("123456", "sssss", time() + (86400 * 30), "/");
 ?>
 
 <!DOCTYPE html>
@@ -9,11 +10,13 @@ setcookie($cookie_name, $cookie_value, time() + (86400 * 30), "/"); // 86400 = 1
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Set Cookie</title>
 </head>
 <body>
 
 <?php
+$cookie_name="123456";
+
 if(!isset($_COOKIE[$cookie_name])) {
   echo "Cookie named '" . $cookie_name . "' is not set!";
 } else {
@@ -23,3 +26,4 @@ if(!isset($_COOKIE[$cookie_name])) {
 ?>
 </body>
 </html>
+

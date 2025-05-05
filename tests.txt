@@ -1,0 +1,27 @@
+<form action="_______________________" method="_______________________">
+
+            Name: <input type="text" name="_______________________"><br>
+
+            E-mail: <input type="text" name="_______________________"><br>
+            
+            <input type="submit">
+   </form> 
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>This is page1.php</title>
+</head>
+<body>
+Welcome <?php echo $____________________["______________"]; ?><br>
+
+Your email address is: <?php echo $________________["_______________"]; 
+
+/>
+</body>
+</html>
+
+
+
