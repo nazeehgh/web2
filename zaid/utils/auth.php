@@ -4,7 +4,7 @@ include('db.php');
 
 function redirectIfNotLoggedIn()
 {
-    if (!isset($_SESSION['username']) && isset($_SESSION['role'])) {
+    if (!isset($_SESSION['username'])) {
         header("Location: ../index.php"); // Redirect to login page if not logged in
         exit();
     }
@@ -33,7 +33,6 @@ function authenticateUser($username, $password)
     if ($row = odbc_fetch_array($result)) {
         if ($hashedPassword == $row['password']) {
             $_SESSION['username'] = $username;
-            $_SESSION['role'] = "2";
             return true;
         }
     }
