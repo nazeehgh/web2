@@ -1,4 +1,5 @@
 <?php
+session_start();
 require "db\conn.inc";
 ?>
 
@@ -10,6 +11,9 @@ require "db\conn.inc";
     <title>Web App - Web Application Development 2 Course</title>
 </head>
 <body>
-    
+    index page
+    <?php
+    echo $_SESSION['username'];
+    ?>
 </body>
 </html>
