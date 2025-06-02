@@ -1,0 +1,292 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #555;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #bbb 3px solid;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #bbb;
+    font-weight: bold;
+}
+
+#newsletter {
+    padding: 15px;
+    color: #fff;
+    background: #333;
+}
+
+#newsletter h1 {
+    float: left;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+.button_1 {
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+}
+
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes .box {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img {
+    width: 90px;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #67b87a;
+    /* font-family: Arial; */
+  }
+
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #35a063;
+    color:rgb(18, 27, 16);
+    font-weight: bold;
+    box-shadow: 5px 2px 10px 1px rgba(53, 52, 52, 0.7);
+  }
+
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(26, 39, 31);
+    border: none;
+    outline: none;
+    /* color: white; */
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(186, 217, 166);
+    box-shadow: none;
+  }
+
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    /* color: black; */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+  }
+
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #e6f1cf;
+    color: rgb(44, 19, 16);
+    box-shadow: none;
+    box-shadow: none;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .navbar .extlink{
+    /* color: rgb(168, 152, 156); */
+    background-color:inherit;
+    font-weight:normal;
+    /* font-size: xx-small; */
+    box-shadow: none;
+  }
+
+
+
+  /* .sitemenu {
+    border: 1px inset rgb(166, 224, 185);
+    background-color: rgb(219, 234, 208);
+    text-align: left;
+    color: white;
+    padding: 3px;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+  }
+
+  div.sitemenu a:link, div.sitemenu a:visited {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #ed645b;
+    color: rgb(247, 231, 231);
+    font-weight: bold;
+    box-shadow: 5px 2px 10px 1px rgba(53, 52, 52, 0.7);
+  }
+
+
+  /* External Link Style */
+  /* div.sitemenu a.extlink:link, div.sitemenu a.extlink:visited {
+
+    color: rgb(240, 162, 184);
+    background-color: hsl(0, 80%, 44%);
+    font-weight:normal;
+    font-size: xx-small;
+    box-shadow: none;
+  }
+  div.sitemenu a.extlink {
+    position: relative;
+    padding-right: 20px;
+  }
+  div.sitemenu a.extlink::after {
+    content: "↗";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #beb673;
+    font-weight: bold;
+  }
+  div.sitemenu a.extlink:hover:after {
+    font-size: 30px;
+    color: #ffef60;
+    font-weight: bold; */
+  /* }
+  div.sitemenu a.extlink:hover {
+    background-color: #ee886f;
+    color: #282824;
+    font-weight: bold;
+  } */
+  /* External Link Style */
+
+
+
+  /* div.sitemenu a:hover {
+    background-color: #ee886f;
+    color: rgb(44, 19, 16);
+    box-shadow: none;
+  }  */
+
+/* Media Queries */
+@media(max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    #newsletter form {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Add Task</title>
+</head>
+<body>
+    <nav class="navbar">         
+        <a href="index.php">Home</a>
+        <a href="register_user.html">Register User</a>
+        <a href="add_task.html"  style="background-color:lightgreen">Add Task</a>
+        <a href="user_list.php">User List</a>
+        <a href="users.json">Users JSON</a>
+    </nav>
+    
+    <h1>Add Task to a User</h1>
+    <form action="add_task.php" method="POST">
+        <label>User Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Task Title:</label><br>
+        <input type="text" name="title" required><br><br>
+
+        <label>Description:</label><br>
+        <textarea name="description" required></textarea><br><br>
+
+        <label>Due Date:</label><br>
+        <input type="date" name="dueDate" required><br><br>
+
+        <label>Status:</label><br>
+        <select name="status">
+            <option value="pending">Pending</option>
+            <option value="completed">Completed</option>
+        </select><br><br>
+
+        <label>Priority:</label><br>
+        <select name="priority">
+            <option value="low">Low</option>
+            <option value="medium" selected>Medium</option>
+            <option value="high">High</option>
+        </select><br><br>
+
+        <input type="submit" class="button_1" value="Add Task">
+    </form>
+</body>
+</html>

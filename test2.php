@@ -9,6 +9,26 @@
     
 <?php
 
+
+$myfile = fopen("file.txt", "r") or die("Unable to open file!");
+echo fgets($myfile);
+echo fgets($myfile);
+echo fread($myfile,10);
+
+
+
+// echo readfile("file.txt");
+// echo fread($myfile,filesize("myfile.txt"));
+// echo fread($myfile,20);
+// echo fgets($myfile);
+// echo "<br>";
+fclose($myfile);
+
+echo fgets(fopen("file.php", "r"));
+echo fgets(fopen("file.php", "r"));
+echo fgets(fopen("file.txt", "r+"));
+echo fgets(fopen("file.php", "r"));
+
 $x = (string) "5";
 // echo (string)5 + $x;
 echo var_dump($x);

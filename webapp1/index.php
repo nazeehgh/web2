@@ -22,6 +22,7 @@ function check_authentication(){
     <nav>
         <ul>
             <li><a href="update_profile.php">Update Profile</a></li>
+            <li><a href="search.php">Search and Sort</a></li>
             <li><a href="logout.php">Logout</a></li>
         </ul>
     </nav>

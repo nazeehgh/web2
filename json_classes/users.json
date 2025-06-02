@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Diaa Fino",
+        "email": "diaa@email.com",
+        "phone": "+96200000000",
+        "tasks": [
+            {
+                "title": "Task 1",
+                "description": "test task 1",
+                "dueDate": "2025-06-10",
+                "status": "pending",
+                "priority": "low"
+            },
+            {
+                "title": "Task 2",
+                "description": "Task 2 desc",
+                "dueDate": "2025-06-14",
+                "status": "pending",
+                "priority": "high"
+            }
+        ]
+    },
+    {
+        "name": "Mohammad",
+        "email": "moh@mail.com",
+        "phone": "545454",
+        "tasks": [
+            {
+                "title": "Task 3",
+                "description": "Desc 3",
+                "dueDate": "2025-06-26",
+                "status": "pending",
+                "priority": "high"
+            }
+        ]
+    }
+]
